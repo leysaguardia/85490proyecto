@@ -1,0 +1,26 @@
+<h1>datos recibidos</h1>
+
+{{#if nombre}}
+<p><strong>nombre:</strong> {{nombre}}</p>
+{{else}}
+<p>no proporciona su nombre</p>
+{{/if}}
+
+
+<p><strong>email:</strong> {{email}}</p>
+<p><strong>mensaje:</strong> {{mensaje}}</p>
+
+
+{{#if intereses.length}}
+<h3>motivo del contacto seleccionado:</h3>
+
+<ul>
+
+    {{#each intereses}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+{{else}}
+<p>no selecciono motivo de contacto</p>
+{{/if}}
+<a href="/">volver</a>
