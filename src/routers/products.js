@@ -3,7 +3,6 @@ import ProductManager from "../managers/product-manager.js";
 const manager = new ProductManager("./src/data/productos.json");
 const router = express.Router();
 
-//La ruta raíz GET / deberá listar todos los productos de la base. (Incluyendo la limitación ?limit del desafío anterior
 
 router.get("/", async (req, res) => {
     try {
@@ -20,7 +19,7 @@ router.get("/", async (req, res) => {
     }
 })
 
-//2) La ruta GET /:pid deberá traer sólo el producto con el id proporcionado
+
 
 router.get("/:pid", async (req, res) => {
     let id = req.params.pid; 
@@ -38,7 +37,7 @@ router.get("/:pid", async (req, res) => {
     }
 })
 
-//3) La ruta raíz POST / deberá agregar un nuevo producto
+
 
 router.post("/", async (req, res) => {
     const nuevoProducto = req.body; 
@@ -52,9 +51,7 @@ router.post("/", async (req, res) => {
 
 })
 
-//4) Actualizar! Lo pueden practicar y lo vemos en clase cualquier duda. 
 
-//5) La ruta DELETE /:pid deberá eliminar el producto con el pid indicado. 
 
 router.delete("/:pid", async (req, res) => {
     let id = req.params.pid; 

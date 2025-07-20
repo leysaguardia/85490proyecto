@@ -1,101 +1,101 @@
 [
   {
     "id": 1,
-    "title": "Arroz",
-    "description": "Marolio",
-    "price": 20,
+    "title": "jardin",
+    "description": "Macetas, plantas y jardineria",
+    "price": 1000,
     "img": "sin imagen",
-    "code": "abc555",
-    "stock": 33
+    "code": "mnb321",
+    "stock": 120
   },
   {
     "id": 2,
-    "title": "Azúcar",
-    "description": "Ledesma",
-    "price": 150,
+    "title": "sala",
+    "description": "Sillones, vitrinas, libreros",
+    "price": 3500,
     "img": "sin imagen",
-    "code": "def456",
-    "stock": 30
+    "code": "vcx654",
+    "stock": 75
   },
   {
     "id": 3,
-    "title": "Harina",
-    "description": "Blanco",
-    "price": 180,
+    "title": "iluminacion",
+    "description": "Lamparas, pantallas, bombillas",
+    "price": 4000,
     "img": "sin imagen",
-    "code": "ghi789",
-    "stock": 20
+    "code": "ñlk987",
+    "stock": 235
   },
   {
     "id": 4,
-    "title": "Aceite",
-    "description": "Saboroso",
-    "price": 350,
+    "title": "closets",
+    "description": "almacenaje abierto, organizadores",
+    "price": 950,
     "img": "sin imagen",
-    "code": "jkl012",
-    "stock": 15
+    "code": "ert741",
+    "stock": 132
   },
   {
     "id": 5,
-    "title": "Leche",
-    "description": "La Serenísima",
-    "price": 120,
+    "title": "ropa de cama",
+    "description": "edredones, almohadas,sabanas y fundas",
+    "price": 685,
     "img": "sin imagen",
-    "code": "mno345",
-    "stock": 40
+    "code": "qaz852",
+    "stock": 439
   },
   {
     "id": 6,
-    "title": "Galletitas",
-    "description": "Tend to be sweet",
-    "price": 250,
+    "title": "electrodomesticos",
+    "description": "Hornos, extractores, heladeras",
+    "price": 5000,
     "img": "sin imagen",
-    "code": "pqr678",
-    "stock": 22
+    "code": "tgb654",
+    "stock": 100
   },
   {
     "id": 7,
-    "title": "Tomates",
-    "description": "En bolsa",
-    "price": 90,
+    "title": "colchones",
+    "description": "colchones y colchoncitos",
+    "price": 770,
     "img": "sin imagen",
-    "code": "stu901",
-    "stock": 35
+    "code": "uhv951",
+    "stock": 431
   },
   {
     "id": 8,
-    "title": "Cereal",
-    "description": "Nestlé",
-    "price": 400,
+    "title": "Terraza o balcon",
+    "description": "muebles de descanso, cocina exterior y accesorios",
+    "price": 3250,
     "img": "sin imagen",
-    "code": "vwx234",
-    "stock": 18
+    "code": "ijn369",
+    "stock": 189
   },
   {
     "id": 9,
-    "title": "Pasta",
-    "description": "Migliore",
-    "price": 170,
+    "title": "camas",
+    "description": "camas altas y divanes, bases, tablillas",
+    "price": 2000,
     "img": "sin imagen",
-    "code": "yz1234",
-    "stock": 28
+    "code": "fre754",
+    "stock": 350
   },
   {
     "id": 10,
-    "title": "Jugo",
-    "description": "Del Valle",
-    "price": 220,
+    "title": "cocina",
+    "description": "sartenes, tablas de cortar, utensilios",
+    "price": 895,
     "img": "sin imagen",
-    "code": "abc567",
-    "stock": 33
+    "code": "plk4239",
+    "stock": 487
   },
   {
     "id": 11,
-    "title": "Helado",
-    "description": "De Menta granizada",
-    "price": 5000,
+    "title": "comer",
+    "description": "vasos y copas, vajillas, cubeterias",
+    "price": 500,
     "img": "sin imagen",
-    "code": "aaa558",
+    "code": "yhu357",
     "stock": 300
   }
 ]

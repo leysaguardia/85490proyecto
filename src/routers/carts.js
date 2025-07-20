@@ -3,7 +3,7 @@ const router = express.Router();
 import CartManager from "../managers/cart-manager.js";
 const manager = new CartManager("./src/data/carts.json");
 
-//1) La ruta raíz POST / deberá crear un nuevo carrito
+
 
 router.post("/", async (req, res) => {
     try {
@@ -14,10 +14,7 @@ router.post("/", async (req, res) => {
     }
 })
 
-//2) La ruta GET /:cid deberá listar los productos que pertenezcan al carrito con el parámetro cid proporcionados.
-//Si hay dudas lo hacemos en clase!
 
-//3) La ruta POST  /:cid/product/:pid deberá agregar el producto al arreglo “products” del carrito seleccionado
 
 router.post("/:cid/product/:pid", async (req, res) => {
     let cartId = req.params.cid;

@@ -8,10 +8,10 @@ module.exports ={
 
     },
 
-    getById: async (req, res)=>{ //controlador de express, para obtener el producto por id
-        const result = await manager.getProductsById(req.params.id) //extrae el pid 
-        result ? res.json(result): res.status(404).send('producto no encontrado')//se evalua
-        //si se encuentra el producto y si no tira 404
+    getById: async (req, res)=>{ 
+        const result = await manager.getProductsById(req.params.id)  
+        result ? res.json(result): res.status(404).send('producto no encontrado')
+       
 
     },
     create: async(req,res)=>{

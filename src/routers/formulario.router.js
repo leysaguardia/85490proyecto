@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-//app.get => lo modificamos por router.get
+
 router.get('/', (req,res)=>{
     res.render('home',{
         layout: 'main', 
@@ -9,15 +9,14 @@ router.get('/', (req,res)=>{
     })
 })
 
-//ruta para envio de formulario
+
 
 router.post('/enviar',(req,res)=>{
-    //constante para extraer los datos que envia el usuario
-    const {nombre, email, mensaje} = req.body //destructuring
+    
+    const {nombre, email, mensaje} = req.body 
     let intereses = req.body.intereses;
     
-    //asegura de que intereses sea siempre array
-    // let intereses = [].concat(req.body.intereses || []);
+   
      if(!intereses){
          intereses = []
 
@@ -25,7 +24,7 @@ router.post('/enviar',(req,res)=>{
          intereses = [intereses]
      }
 
-    //renderizamos la informacion en un una vista resultado
+    
 
     res.render('resultado',{
         layout:'main',

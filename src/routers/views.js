@@ -1,7 +1,7 @@
 import { Router } from "express";
 const router = Router(); 
 
-//Importamos al ProductModel: 
+
 import ProductModel from "../models/product.model.js";
 
 router.get("/products", async (req, res) => {

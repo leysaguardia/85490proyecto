@@ -3,7 +3,7 @@ const router = Router();
 import ImagenModel from "../models/imagen.model.js";
 import {promises as fs} from "fs";
 
-//Ruta raíz de la aplicación: 
+
 
 router.get("/", async (req, res) => {
     
@@ -12,14 +12,14 @@ router.get("/", async (req, res) => {
     res.render("index", {imagenes})
 })
 
-//Ruta para mostrar el upload.handlebars
+
 
 router.get("/upload", (req, res) => {
     res.render("upload");
 })
 
 
-//Ruta upload, para subir las imagenes con multer: 
+
 
 router.post("/upload", async (req, res) => {
     try {
@@ -29,7 +29,7 @@ router.post("/upload", async (req, res) => {
         imagen.filename = req.file.filename; 
         imagen.path = "/img/" + req.file.filename; 
 
-        //Guardamos el objeto en la base de datos. 
+        
         await imagen.save(); 
 
         res.redirect("/");

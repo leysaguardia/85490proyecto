@@ -10,12 +10,12 @@ module.exports ={
     },
 
     getById:async(req,res)=>{
-        const result = await manager.getCartById(req.params.cid) //extrae el pid 
+        const result = await manager.getCartById(req.params.cid) 
         result ? res.json(result): res.status(404).send('carrito no encontrado')
     },
 
      addProduct:async(req,res)=>{
-        const result = await manager.addProductToCart(req.params.cid, req.params.pid) //extrae el pid 
+        const result = await manager.addProductToCart(req.params.cid, req.params.pid) 
         result ? res.json(result): res.status(404).send('carrito no encontrado')
     }
 }

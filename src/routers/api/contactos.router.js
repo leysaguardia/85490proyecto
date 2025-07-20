@@ -5,15 +5,15 @@ const path = require('path')
 
 const router = express.Router()
 
-//definir una ruta del archivo donde pensamos guardar los datos
+
 const DB_PATH = path.join (__dirname, '../../contactos.json')
 
 
-//funciones para leer el json
+
 
 const leerContactos = async()=>{
     try{
-        //lee el contenido del archivo 
+       
         const data = await fs.readFile(DB_PATH, 'utf-8')
         return JSON.parse(data)
     }
@@ -29,11 +29,11 @@ const guardarContactos = async (data) =>{
 
 
 router.get('/', async(req , res)=>{
-    //lee los contactos actuales
+    
         const contactos = await leerContactos(
             
         )
-        //responder con un json que va a contener los contactos
+        
         res.json({success:true, contactos})
 })
 
@@ -50,7 +50,7 @@ router.post('/', async (req, res)=>{
 
 const contactos = await leerContactos()
 
-//creamos un nuevo contacto
+
 
 const nuevo = {
     id: contactos.length + 1,
@@ -59,8 +59,8 @@ const nuevo = {
     mensaje,
     intereses: arrayBuffer.isArray(intereses)
     ? intereses 
-    :inteses ? [intereses] //si hay string lo pasamos a array
-    :[] //si no hay intereses, dejamos array vacio
+    :inteses ? [intereses] 
+    :[] 
 }
 
 contactos.push(nuevo)
